@@ -1,5 +1,6 @@
 import sys
 import re
+import os
 
 sohead = re.compile('(.+\.so):')
 funchead = re.compile('([0-9a-f]{8}) <(.+)>:')
@@ -33,6 +34,7 @@ def parseasm( lines ):
         m = sohead.match(l)
         if m:
             so =  m.groups()[0]
+            so = os.path.split(so)[1]
     return so, ret
 
 if __name__=="__main__":
