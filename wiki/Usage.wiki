@@ -43,10 +43,10 @@ python parse_stack.py <asm-file> <logcat-file>
 A sample output of the script would be:
 
 {{{
-0x0001b768:Java_com_example_MyClass_jniFunc + 0x0084
-0x0001cc6c:                   native_func_1 + 0x0048
-0x0001d8d4:                   native_func_2 + 0x0854
 0x0001d9dc:                   native_func_3 + 0x095c
+0x0001d8d4:                   native_func_2 + 0x0854
+0x0001cc6c:                   native_func_1 + 0x0048
+0x0001b768:Java_com_example_MyClass_jniFunc + 0x0084
 }}}
 
 Each of these lines represents a function call (actually - a return address, which points to the instruction immediately after the function call).
