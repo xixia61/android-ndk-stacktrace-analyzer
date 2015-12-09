@@ -1,0 +1,1 @@
+A simple tool for analyzing the stack trace generated from crashing native code in the android system.
